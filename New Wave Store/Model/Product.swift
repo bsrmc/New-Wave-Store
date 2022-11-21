@@ -13,7 +13,7 @@ class Product {
     var picture: String
     var quantity: Int
     var price: Double
-    init(name: String = "pen", description: String = "pen", picture: String = "wPen", quantity: Int = 0, price: Double = 0.0){
+    init(name: String = "pen", description: String = "the best pen ever", picture: String = "wPen", quantity: Int = 0, price: Double = 0.0){
         self.name = name
         self.description = description
         self.picture = picture
