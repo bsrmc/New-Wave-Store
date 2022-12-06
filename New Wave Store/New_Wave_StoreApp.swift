@@ -5,13 +5,17 @@
 //  Created by Busra Coskun (student LM) on 11/21/22.
 //
 
-import SwiftUI
 
+import SwiftUI
 @main
 struct New_Wave_StoreApp: App {
+    @StateObject var products: ProductList = ProductList()
+    @StateObject var cart: Cart = Cart()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(products)
+                .environmentObject(cart)
         }
     }
 }

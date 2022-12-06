@@ -6,7 +6,10 @@
 //
 
 import Foundation
-
-class ProductList: ObservableObject {
-    @Published var products: [Product] = [Product(name: "wPen", description: "the best pen ever", picture: "wPen", quantity: 0, price: 5.0), Product(name: "nwPhone", description: "good phone", picture: "nwPhone", quantity: 0, price: 1000.0), Product(name: "NW-PC", description: "pc!", picture: "NW-PC", quantity: 0, price: 500.0), Product(name: "software", description: "great software", picture: "software", quantity: 0, price: 100.0)]
+class ProductList : ObservableObject{
+    @Published var products : [Product]
+    init(products: [Product] = [Product(name: "NW-PC", description: "best!", picture: "NW-PC", quantity: 3000, price: 1999.50), Product(name: "nwPhone", description: "best!", picture: "nwPhone", quantity: 10000, price: 4999.99), Product(name: "wPen", description: "best!", picture: "wPen", quantity: 250, price: 450.50), Product(name: "software", description: "best!", picture: "software", quantity: 10, price: 4.50)]){
+        
+        self.products = products
+    }
 }
